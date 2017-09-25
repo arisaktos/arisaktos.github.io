@@ -1,0 +1,97 @@
+body {
+    color: #404040;
+    line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-color: #850d75;
+    padding-top: 20px;
+}
+
+label {
+    padding-bottom: 4px;
+    display: block;
+}
+
+legend {
+    border-bottom: 1px solid #ca3fb8;
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #d800bc;
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+    background-color: #fff;
+    width: 40%;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 2px 2px 15px #242424;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    width: 97%;
+}
+
+label[for=city],
+label[for=gender] {
+    display: inline-block;
+}
+
+select[name=city] {
+    margin-right: 30px;
+}
+
+select {
+    width: 30%;
+}
+
+.consent-copy {
+    font-size: 12px;
+    font-style: italic;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #d800bc;
+    outline: none;
+}
+
+textarea {
+    height: 10em;
+    width: 97%;
+    display: block;
+    resize: none;
+}
+
+.submit-btn {
+    cursor: pointer;
+    background-color: #ca3fb8;
+    color: #fff;
+    padding: 10px 35px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: transparent;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #850d75;
+}
