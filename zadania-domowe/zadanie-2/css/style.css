@@ -40,7 +40,8 @@ input[type=tel] {
 }
 
 label[for=city],
-label[for=gender] {
+label[for=male],
+label[for=female] {
     display: inline-block;
 }
 
