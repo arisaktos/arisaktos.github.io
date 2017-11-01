@@ -3,7 +3,7 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #777777;
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     line-height: 2;
 }
@@ -42,11 +42,12 @@ p {
     cursor: pointer;
 }
 
-.left-align {
-    text-align: left;
+
+.attractions > div {
+    margin-bottom: 50px;
 }
 
-.attractions-img {
+.attractions img {
     width: 90%;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -68,8 +69,9 @@ p {
     padding-top: 30px;
 }
 
-.extra-margin {
-    padding: 100px 0px;
+section,
+footer {
+    padding: 80px 0px;
 }
 
 
@@ -96,7 +98,7 @@ p {
 }
 
 .navbar-light .navbar-nav .nav-link:hover::before {
-    width: 80%;
+    width: 70%;
 }
 
 
@@ -126,7 +128,7 @@ h2 {
     text-align: left;
 }
 
-.logo {
+.logo-container img {
     float: right;
 }
 
@@ -308,7 +310,6 @@ textarea {
     padding: 15px;
     margin: 10px;
     font-weight: bold;
-    text-transform: uppercase;
     border-radius: 5px;
     border: 1px solid #d5d5d5;
     width: 97%;
@@ -358,27 +359,25 @@ input[type="submit"]:hover {
     justify-content: center;
 }
 
-input::-webkit-input-placeholder {
-    color: #c5c5c5;
-}
-
-input:-ms-input-placeholder {
-    color: #c5c5c5;
-}
 
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
     color: #c5c5c5;
+    text-transform: uppercase;
 }
+
 
 textarea:-ms-input-placeholder,
 input:-ms-input-placeholder {
     color: #c5c5c5;
+    text-transform: uppercase;
 }
+
 
 textarea::placeholder,
 input::placeholder {
     color: #c5c5c5;
+    text-transform: uppercase;
 }
 
 
@@ -412,10 +411,46 @@ footer img {
 }
 
 .navbar-light .navbar-toggler {
-    border-color: white;
+    background-color: #fff;
+    outline: none;
 }
 
 .col-sm-6:first-child p,
 .col-sm-6:nth-child(2) p {
     margin-bottom: 30px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .attractions img {
+        width: 70%;
+    }
+
+    #top-banner-section {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.4))), url('../img/header/zakatek-top-banner-mobile.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../img/header/zakatek-top-banner-mobile.jpg');
+
+    }
+
+    .top-banner {
+        height: 600px;
+    }
+
+    #top-banner-section .logo-container img {
+        float: left;
+    }
+
+    #top-banner-section .logo-container {
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        margin-bottom: -40px;
+    }
+
+
+
+
 }
