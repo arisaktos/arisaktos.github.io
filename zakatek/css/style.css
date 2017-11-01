@@ -438,10 +438,11 @@ footer img {
 
     .top-banner {
         height: 600px;
+        text-align: center;
     }
 
     #top-banner-section .logo-container img {
-        float: left;
+        float: none;
     }
 
     #top-banner-section .logo-container {
@@ -449,8 +450,13 @@ footer img {
         align-self: flex-end;
         margin-bottom: -40px;
     }
+    #top-banner-section h1 {
+        font-size: 3rem;
+    }
 
-
+    #top-banner-section h2 {
+        font-size: 1.7rem;
+    }
 
 
 }
