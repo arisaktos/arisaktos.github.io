@@ -43,7 +43,7 @@ h1 {
     color: #fff;
 }
 
-.navbar-light .navbar-brand:hover {
+.navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
 }
 
@@ -130,7 +130,7 @@ h1 {
 }
 
 .extra-margin {
-    padding: 150px 0px;
+    padding: 100px 0px;
 }
 
 .display-4 {
@@ -280,7 +280,7 @@ h4 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url('../img/footer/world-map.jpg');
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../img/footer/world-map.jpg');
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100%;
     width: 100%;
     color: #fff;
 }
@@ -288,24 +288,22 @@ h4 {
 input,
 textarea {
     padding: 15px;
-    margin: 10px;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 5px;
     border: none;
+    display: block;
 }
 
 input {
-    width: 97%;
-    float: left;
+    width: 100%;
     height: 60px;
     margin-bottom: 15px;
 }
 
 textarea {
     width: 100%;
-    float: right;
-    height: 230px;
+    height: 210px;
 }
 
 input::-webkit-input-placeholder {
@@ -337,13 +335,14 @@ input::placeholder {
 
 input[type="submit"] {
     background-color: #10d8d8;
-    width: 21%;
+    width: 300px;
     color: #fff;
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
     text-align: center;
     font-size: 1.1rem;
     height: 70px;
+    margin-top: 30px;
 }
 
 input[type="submit"]:hover {
@@ -377,4 +376,22 @@ footer a {
 footer a:hover {
     color: #10d8d8;
 
+}
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .middle-on-smaller {
+        float: none;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .top-banner {
+        height: 70vh;
+    }
 }

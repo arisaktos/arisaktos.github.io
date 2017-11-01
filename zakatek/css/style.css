@@ -310,7 +310,7 @@ textarea {
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #d5d5d5;
     width: 97%;
 }
 
@@ -386,10 +386,9 @@ footer {
     margin-top: 30px;
     color: #222222;
     line-height: 40px;
-    background-color: #777;
+    background-color: #f0f0f0;
     height: 100%;
     width: 100%;
-    color: #fff;
     text-align: left;
     line-height: 1.6;
 }
@@ -410,4 +409,13 @@ footer a:hover {
 
 footer img {
     max-width: 100%;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+
+.col-sm-6:first-child p,
+.col-sm-6:nth-child(2) p {
+    margin-bottom: 30px;
 }
