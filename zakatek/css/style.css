@@ -35,8 +35,9 @@ p {
     height: 40px;
 }
 
-.bolded
-{font-weight: 700;}
+.bolded {
+    font-weight: 700;
+}
 
 .carousel-indicators li {
     height: 10px;
@@ -50,8 +51,9 @@ p {
     margin-bottom: 50px;
 }
 
-.attractions
-{text-align: center;}
+.attractions {
+    text-align: center;
+}
 
 .attractions img {
     width: 90%;
@@ -349,8 +351,9 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
-form
-{margin-top: 30px;}
+form {
+    margin-top: 30px;
+}
 
 #photos {
     text-align: left;
@@ -443,9 +446,10 @@ footer img {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../img/header/zakatek-top-banner-mobile.jpg');
 
     }
-    
-    .mobile-margin
-    {margin-bottom: 40px;}
+
+    .mobile-margin {
+        margin-bottom: 40px;
+    }
 
     .top-banner {
         height: 600px;
@@ -467,6 +471,10 @@ footer img {
 
     #top-banner-section h2 {
         font-size: 1.7rem;
+    }
+
+    .carousel-indicators {
+        display: none;
     }
 
 
