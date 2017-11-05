@@ -175,15 +175,15 @@ h4 {
 #top-banner-section {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.4))), url('../img/header/zakatek-top-banner.jpg');
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../img/header/zakatek-top-banner.jpg');
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
 
 .top-banner {
-    /*    background-image: url(../img/header/pictures_on_the_wall.jpg);*/
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
+
     height: 80vh;
     width: 100%;
     color: white;

@@ -1,4 +1,5 @@
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -8,15 +9,8 @@ body {
     background-color: #f9fcfe;
     font-size: 16px;
     line-height: 1.5;
-    margin: 0;
 }
 
-ul {
-    margin: 0;
-}
-
-
-/* helpers */
 
 #main-header {
     height: 90vh;
@@ -31,7 +25,10 @@ ul {
 }
 
 
-/* nawigacja */
+.no-spacing-fixer {
+    padding: 0px;
+}
+
 
 #menuToggle input {
     display: none;
@@ -57,15 +54,12 @@ ul {
     text-decoration: none;
 }
 
-.clear {
-    clear: both;
-}
+
 
 h1 {
     font-size: 7.4em;
     font-weight: 100;
-    padding: 0;
-    margin: 0;
+
 }
 
 h1 span {
@@ -76,8 +70,7 @@ h1 span {
 h2 {
     font-weight: 100;
     font-size: 2.1em;
-    padding: 0;
-    margin: 0;
+
 }
 
 .mid {
@@ -85,33 +78,25 @@ h2 {
     width: 100%;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-family: 'Roboto', sans-serif;
 }
 
 section {
     text-align: center;
-    margin: auto;
     margin-top: 50px;
-    overflow: hidden;
     padding-bottom: 60px;
 }
 
 #o-mnie {
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-me {
-    float: left;
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
-.about-me img {
-    width: 25%;
-    float: left;
-    border: 20px solid #ffffff;
+.about-me-photo {
+    max-width: 100%;
+    border: 10px solid #ffffff;
     border-radius: 25px;
 }
 
@@ -119,19 +104,11 @@ p {
     font-weight: 300;
 }
 
-.about-me p {
-    display: inline-block;
-    width: 55%;
+.left-align {
     text-align: left;
 }
 
-#umiejetnosci {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
 #umiejetnosci figure {
-    display: inline-block;
     margin-top: 60px;
 }
 
@@ -143,11 +120,7 @@ p {
     margin-top: 30px;
 }
 
-#portfolio {
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 0px;
-}
+
 
 h3 {
     font-size: 2em;
@@ -160,21 +133,12 @@ h3 span {
     font-weight: 400;
 }
 
-#moje-port-between {
-    margin: 0;
-    padding: 0;
-}
-
-#moje-port-between h3 {
-    margin-bottom: 0px;
-}
 
 .skill {
-    width: 33%;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    float: left;
     height: 370px;
 }
 
@@ -196,6 +160,7 @@ h3 span {
     height: 100%;
     opacity: 0;
     padding: 5px;
+    -webkit-transition: all 0.7s;
     transition: all 0.7s;
 }
 
@@ -209,6 +174,7 @@ h3 span {
     position: absolute;
     top: 50%;
     width: 100%;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -216,10 +182,6 @@ h3 span {
     margin-top: 30px;
 }
 
-.skill__inner p span {
-    font-size: 24px;
-    font-weight: 500;
-}
 
 .skill:hover .item-mask {
     opacity: 1;
@@ -227,31 +189,12 @@ h3 span {
 
 footer {
     background-color: #213b50;
-    height: 380px;
     padding-top: 40px;
-}
-
-#contact {
     color: #fff;
-    width: 50%;
-    float: left;
 }
 
-#contact address {
-    font-style: normal;
-}
-
-#contact a {
+footer a {
     color: #1ac056;
-}
-
-#contact h3 {
-    margin: 0;
-}
-
-.wrapper {
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 #extra-footer {
@@ -261,7 +204,6 @@ footer {
     line-height: 40px;
 }
 
-#social-media-list {}
 
 #social-media-list a i {
     width: 50px;
@@ -277,11 +219,7 @@ footer {
     margin-right: 10px;
 }
 
-#contact-form {
-    color: #fff;
-    width: 50%;
-    float: right;
-}
+
 
 input,
 textarea {
@@ -292,7 +230,7 @@ textarea {
     border: none;
     background-color: #2b4a64;
     color: #9bbabf;
-    box-sizing: border-box;
+
 }
 
 input:focus,
@@ -303,7 +241,7 @@ textarea:focus {
 input[type="submit"] {
     background-color: #1ac056;
     color: #fff;
-    width: 20%;
+    width: 200px;
     border: 1px solid #fff;
     font-weight: bold;
     padding: 15px;
@@ -321,27 +259,14 @@ input[type="submit"]:hover {
     color: #1ac056;
 }
 
-@media all and (min-width: 992px) and (max-width:1200px) {
-    .skill-first {
-        width: 50%;
-    }
-    .skill-second {
-        width: 50%;
-    }
-    .skill-third {
-        width: 100%;
-    }
-}
+
 
 @media all and (max-width: 992px) {
     #menuToggle {
         z-index: 20;
         width: 100%;
     }
-    .about-me,
-    #umiejetnosci {
-        margin: 0;
-    }
+
     #top-nav #menuToggle #menu li {
         display: block;
         padding: 0px;
@@ -350,6 +275,7 @@ input[type="submit"]:hover {
     #top-nav #menuToggle #menu li a {
         display: block;
         width: 100%;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         background-color: #f4f8f6;
     }
@@ -394,7 +320,7 @@ input[type="submit"]:hover {
         -webkit-transform: translate(0, -100%);
         transform: translate(0, -100%);
     }
-    #menuToggle input:checked~ul {
+    #menuToggle input:checked ~ ul {
         -webkit-transform: translate(0, 0%);
         transform: translate(0, 0%);
     }
@@ -404,42 +330,9 @@ input[type="submit"]:hover {
     h1 {
         font-size: 3.4em;
     }
-    section {
-        margin-top: 0px;
-    }
-    #portfolio {
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-    .about-me img {
-        width: 80%;
-        border: 10px solid #ffffff;
-        border-radius: 25px;
-        margin: auto;
-        float: none;
-    }
-    .about-me p {
-        width: 80%;
-    }
-    .skill {
-        width: 100%;
-    }
-    #contact {
-        width: 100%;
-        text-align: center;
-        float: none;
-    }
-    footer {
-        height: auto;
-    }
-    #extra-footer {
-        text-align: center;
-    }
     #contact-form {
         margin-top: 40px;
-        width: 100%;
     }
-    input[type="submit"] {
-        width: 100%;
-    }
+
+
 }
